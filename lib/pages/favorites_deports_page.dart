@@ -22,7 +22,7 @@ class _FavoritesDeportsPageState extends State<FavoritesDeportsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Favorites Deports App"),
+        title: const Text("Favorites Deports App"),
         centerTitle: true,
         backgroundColor: Colors.orange,
       ),
@@ -40,8 +40,7 @@ class _FavoritesDeportsPageState extends State<FavoritesDeportsPage> {
                   ItemDportWidget(deportList[i])
               ],
             ),
-            
-            Divider(
+         const   Divider(
               thickness: 3,
               color: Colors.black,
               height: 48,
@@ -62,7 +61,7 @@ class TituloWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       texto,
-      style: TextStyle(fontSize: 25),
+      style: const TextStyle(fontSize: 25),
     );
   }
 }
